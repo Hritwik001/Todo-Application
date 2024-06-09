@@ -1,38 +1,90 @@
+/* General Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+}
+
+/* App Container */
 .App {
   text-align: center;
+  margin-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header */
+h1 {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Input Field */
+input {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #87cefa;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 1em;
+  transition: border-color 0.3s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input:focus {
+  border-color: #4682b4;
+  outline: none;
+}
+
+/* Add Button */
+button {
+  padding: 10px 20px;
+  font-size: 1em;
   color: white;
+  background-color: #4682b4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #5a9bd3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Todo List */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px auto; /* Center the list items */
+  padding: 10px;
+  background-color: #e6f7ff;
+  border: 1px solid #87cefa;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+li:hover {
+  background-color: #d1eeff;
+}
+
+/* Delete Button */
+li button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+li button:hover {
+  background-color: #ff3333;
 }
